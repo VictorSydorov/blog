@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Blog.Web.Models.PostModels.PostDisplayModel>
+@using Blog.Web.Models
+@{
+    ViewBag.Title = "My blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+@section scripts
+{
+    <link href="~/Content/Pages/PostList.css" rel="stylesheet" />
+}
+
+<h2>Blog</h2>
+
+<p>
+   @* @Html.ActionLink("Create New", "Create")*@
+</p>
+
+@foreach (var item in Model) {
+    <a href="@Url.Action("Post","Post",new {id=item.Id})" class="title">@Html.DisplayFor(modelItem => item.Title)</a> 
+    <p>Created by @item.User on @item.DateCreated</p>
+    <div>
+        @Html.DisplayFor(modelItem => item.Content)
+        <a href="@Url.Action("Post","Post",new {id=item.Id})">more...</a>
+    </div>
+    <br>
+    <div class="tags">
+        Categories:@{ Html.RenderPartial("Partial/_Tags", item.Tags); }
+    </div>
+    <a href="@Url.Action("create","Comment",new {postId=item.Id})">Reply</a>
+   @Html.Raw("&nbsp;|&nbsp;");
+    <a href="@Url.Action("post","Post",new {id=item.Id})">Comments(@item.NumberOfComments)</a>
+    @Html.Raw("&nbsp;|&nbsp;")
+      @Html.Raw("Las updated:") @Html.DisplayFor(modelItem => item.DateUpdate)
+      <hr>
+     
+      
+}
+
+

@@ -1,0 +1,11 @@
+D:\www\Blog\Blog.DAL\bin\Debug\Blog.DAL.dll
+D:\www\Blog\Blog.DAL\bin\Debug\Blog.DAL.pdb
+D:\www\Blog\Blog.DAL\bin\Debug\Blog.Entities.dll
+D:\www\Blog\Blog.DAL\bin\Debug\EntityFramework.dll
+D:\www\Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\www\Blog\Blog.DAL\bin\Debug\Blog.Entities.pdb
+D:\www\Blog\Blog.DAL\bin\Debug\EntityFramework.xml
+D:\www\Blog\Blog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\www\Blog\Blog.DAL\obj\Debug\Blog.DAL.csprojResolveAssemblyReference.cache
+D:\www\Blog\Blog.DAL\obj\Debug\Blog.DAL.dll
+D:\www\Blog\Blog.DAL\obj\Debug\Blog.DAL.pdb

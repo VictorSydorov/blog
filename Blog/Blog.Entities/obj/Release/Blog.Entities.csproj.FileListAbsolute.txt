@@ -1,0 +1,8 @@
+D:\www\Blog\Blog.Entities\bin\Release\Blog.Entities.dll
+D:\www\Blog\Blog.Entities\bin\Release\Blog.Entities.pdb
+D:\www\Blog\Blog.Entities\bin\Release\EntityFramework.dll
+D:\www\Blog\Blog.Entities\bin\Release\EntityFramework.SqlServer.dll
+D:\www\Blog\Blog.Entities\bin\Release\EntityFramework.xml
+D:\www\Blog\Blog.Entities\bin\Release\EntityFramework.SqlServer.xml
+D:\www\Blog\Blog.Entities\obj\Release\Blog.Entities.dll
+D:\www\Blog\Blog.Entities\obj\Release\Blog.Entities.pdb

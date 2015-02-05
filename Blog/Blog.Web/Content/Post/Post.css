@@ -1,0 +1,18 @@
+﻿body {
+}
+
+
+#comments {
+   
+    margin-top:50px;
+}
+.comment {
+    margin-top:5px;
+     background-color:#f7f0f0;
+}
+.comment-title {
+    background-color:#c3ddf5;
+}
+.comment-content {
+    background-color:#e1caca;
+}

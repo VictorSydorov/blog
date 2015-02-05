@@ -1,0 +1,30 @@
+﻿@model Blog.Entities.Post
+@using Blog.Web.Models
+@{
+    ViewBag.Title = "Post";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+@section Styles{
+   
+    <link href="~/Content/Post/Post.css" rel="stylesheet" />
+}
+<h2>@Model.Title</h2>
+<p>Posted on @Model.DateCreated</p>
+<div>@Model.Content</div>
+<br>
+<div class="tags">Categories:
+    @{Html.RenderPartial("Partial/_Tags",Model.Tags);}
+</div>
+   <a href="@Url.Action("create","Comment",new {postId=Model.Id})">Reply</a>
+   @Html.Raw("&nbsp;|&nbsp;")
+  
+      @Html.Raw("Last updated:") @Html.DisplayFor(modelItem => Model.DateUpdate)
+      <hr>
+<div id="comments"></div>
+<input type="hidden" id="comment_url" value="@Url.Action("index","comment",new {post=Model.Id})"/>
+<input type="hidden" id="comment_reply_url" value="@Url.Action("create","comment",new {postId=Model.Id})"/>
+@section Scripts{
+   
+    <script src="~/Scripts/Post/Post.js"></script>
+}

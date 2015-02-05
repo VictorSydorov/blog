@@ -1,0 +1,11 @@
+﻿@using Blog.Web.Models
+@model string
+
+
+
+
+  @foreach(string s in TagUtility.SplitTags(Model))
+    {
+    <a href = "@Url.Action("posts","post",new {tag=s})" >@s</a>
+        Html.Raw(" ");
+    }

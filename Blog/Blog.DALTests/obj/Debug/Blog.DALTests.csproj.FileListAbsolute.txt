@@ -1,0 +1,14 @@
+D:\www\Blog\Blog.DALTests\bin\Debug\Blog.DALTests.dll.config
+D:\www\Blog\Blog.DALTests\bin\Debug\Blog.DALTests.dll
+D:\www\Blog\Blog.DALTests\bin\Debug\Blog.DALTests.pdb
+D:\www\Blog\Blog.DALTests\bin\Debug\Blog.DAL.dll
+D:\www\Blog\Blog.DALTests\bin\Debug\Blog.Entities.dll
+D:\www\Blog\Blog.DALTests\bin\Debug\EntityFramework.dll
+D:\www\Blog\Blog.DALTests\bin\Debug\EntityFramework.SqlServer.dll
+D:\www\Blog\Blog.DALTests\bin\Debug\Blog.DAL.pdb
+D:\www\Blog\Blog.DALTests\bin\Debug\Blog.Entities.pdb
+D:\www\Blog\Blog.DALTests\bin\Debug\EntityFramework.xml
+D:\www\Blog\Blog.DALTests\bin\Debug\EntityFramework.SqlServer.xml
+D:\www\Blog\Blog.DALTests\obj\Debug\Blog.DALTests.csprojResolveAssemblyReference.cache
+D:\www\Blog\Blog.DALTests\obj\Debug\Blog.DALTests.dll
+D:\www\Blog\Blog.DALTests\obj\Debug\Blog.DALTests.pdb

@@ -1,0 +1,70 @@
+﻿@using Blog.Entities
+@model Blog.Web.Models.Comment.CommentCreateModel
+
+@{
+    ViewBag.Title = "New comment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Comment parent = ViewBag.Comment != null ? ViewBag.Comment as Comment : null;
+    int postId = ViewBag.PostId;
+        
+}
+
+<h2>New comment</h2>
+
+<div>
+    @if (parent != null)
+    {
+        @Html.Raw(parent.Content);
+    }
+        
+</div>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Comment</legend>
+
+        <div class="editor-label">
+          Text:
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Content)
+            @Html.ValidationMessageFor(model => model.Content)
+        </div>
+        
+        <div class="editor-label">
+           My name:
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Author)
+            @Html.ValidationMessageFor(model => model.Author)
+        </div>
+
+        <div class="editor-label">
+            My email:
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+        @if (parent != null)
+        {
+             <input type="hidden" id="ParentId" name="ParentId" value="@parent.Id"/>
+        }
+          <input type="hidden" id="PostId" name="PostId" value="@postId"/>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
